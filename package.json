@@ -1,0 +1,15 @@
+{
+  "name": "twitter_queries",
+  "version": "1.0.0",
+  "description": "A can of my personal twitter queries",
+  "main": "twitter_queries.js",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PhlipPhlops",
+  "license": "ISC"
+}
