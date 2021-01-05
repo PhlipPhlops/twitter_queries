@@ -19,13 +19,13 @@ module.exports = class TwitterQueries {
     }
 
     getBookmarks() {
-        let bookmarks;
-        this.client.get('favorites/list', {}, (error, tweets, response) => {
-            this._handleError(error);
-            console.log(tweets)
-            bookmarks = tweets;
-        })
-        return bookmarks;
+        return this.client.get('favorites/list', {})
+            .then((tweet) => {
+                return tweet;
+            })
+            .catch((error) => {
+                console.error(error);
+            });
     }
 
     search(query, lang='en', maxResults=10) {
